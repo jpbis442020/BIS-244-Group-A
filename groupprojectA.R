@@ -15,7 +15,7 @@ PovertyEstimates$popdivpoverty <- (PovertyEstimates$POVALL_2019 / PovertyEstimat
 averagepov=0.1208381
 p<-ggplot(data=PovertyEstimates, aes(x=Area_name, y=popdivpoverty, fill=`2020vote`)) +
   
-  geom_bar(stat="identity")+  labs(x = "state",
+  geom_bar(stat="identity")+  labs(x = "State",
                                    y = "rate of poverty",title = "Which states voted for who vs average poverty rate")+
   
   geom_hline(yintercept=0.1208381, linetype="dashed", color = "red")
