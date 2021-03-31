@@ -18,6 +18,6 @@ p<-ggplot(data=PovertyEstimates, aes(x=Area_name, y=popdivpoverty, fill=`2020vot
   geom_bar(stat="identity")+  labs(x = "State",
                                    y = "rate of poverty",title = "Which states voted for who vs average poverty rate")+
   
-  geom_hline(yintercept=0.1208381, linetype="dashed", color = "red")
+  geom_hline(yintercept=0.1208381, linetype="dashed", color = "red")+ coord_flip()
 
 p
